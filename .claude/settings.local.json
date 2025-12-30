@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(where:*)",
+      "Bash(py extract_pdfs.py:*)",
+      "Skill(landingai)",
+      "Skill(landingai:*)",
+      "Bash(python extract_pdfs.py:*)",
+      "Skill(llamaparse)",
+      "Skill(llamaparse:*)",
+      "Bash(python parse_pdfs.py:*)",
+      "Bash(python3:*)",
+      "Bash(py:*)",
+      "Bash(uv run:*)",
+      "Skill(paper-analysis)",
+      "Skill(paper-analysis:*)"
+    ]
+  }
+}
