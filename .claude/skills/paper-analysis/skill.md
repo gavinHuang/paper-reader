@@ -10,6 +10,43 @@ license: Open Source
 
 This guide provides structured frameworks for analyzing research papers using AI assistance. It helps extract paper structure, key ideas, technical details, and engineering inspiration efficiently. Designed for AI engineers who need to quickly understand papers, identify borrowable concepts, and adapt innovations for their own projects.
 
+## Core Principles for AI Assistants
+
+**When using this skill to analyze papers, ALWAYS follow these principles:**
+
+### Simplicity First
+- Use plain, everyday language instead of academic jargon
+- Explain concepts as if talking to a colleague, not writing a thesis
+- Replace formal terms with practical ones:
+  - "novel contribution" → "what's new/different"
+  - "methodology" → "how they did it"
+  - "empirical validation" → "testing/results"
+  - "architectural framework" → "how it's built"
+- Break down complex ideas into simple steps
+- Use concrete examples instead of abstract descriptions
+
+### Practical Over Academic
+- Focus on "how can I use this?" not "what does this mean theoretically?"
+- Emphasize implementation details over theoretical foundations
+- Highlight code, tools, and techniques that can be directly applied
+- Skip unnecessary background unless specifically asked
+- Answer "so what?" for every insight - why does it matter practically?
+- Prioritize working solutions over perfect understanding
+
+### Direct Communication
+- Get straight to the point
+- Start with the answer, then provide details if needed
+- Use active voice: "this paper shows" not "it can be observed that"
+- Say "doesn't work well" instead of "suboptimal performance"
+- Be honest about limitations and tradeoffs
+
+### Action-Oriented
+- Every explanation should lead to something the user can do
+- Provide "next steps" and "how to try this"
+- Include code snippets, pseudocode, or clear algorithms
+- Suggest concrete experiments or prototypes
+- Focus on "what to build" not just "what to know"
+
 ## Quick Start
 
 ```plaintext
@@ -48,6 +85,20 @@ Process 3-5 papers per query for optimal results.
 # Request compatible formats
 Use markdown, Mermaid, ASCII for easy rendering.
 ```
+
+### AI Response Style
+
+When analyzing papers with this skill:
+- **Avoid**: "The authors present a novel architectural paradigm..."
+- **Use**: "They built a new model that..."
+
+- **Avoid**: "This methodology demonstrates superior performance characteristics..."
+- **Use**: "This method is faster/better because..."
+
+- **Avoid**: "The empirical results substantiate the theoretical framework..."
+- **Use**: "The tests show it works..."
+
+Always translate academic language into builder/engineer language.
 
 ## Paper Structure and Gist Extraction
 
@@ -652,6 +703,35 @@ questions."
 
 ## Best Practices
 
+### Response Guidelines for AI
+
+When responding to paper analysis requests, structure answers like this:
+
+**For Summaries:**
+```
+Problem: [What they're solving in one sentence]
+Solution: [Their approach in simple terms]
+Results: [Did it work? By how much?]
+Useful for: [When would I use this?]
+```
+
+**For Technical Details:**
+```
+What it is: [Simple explanation]
+How it works: [Key steps, no jargon]
+Code hint: [Library/function to use]
+Works well when: [Use cases]
+Watch out for: [Common issues]
+```
+
+**For Ideas/Techniques:**
+```
+Technique: [Name in plain English]
+Why it's cool: [The insight]
+How to try it: [Concrete steps]
+Where it fits: [Real applications]
+```
+
 ### Prompt Engineering Tips
 
 1. **Be Specific with Context**
@@ -687,6 +767,15 @@ questions."
 - **Verification**: Cross-check AI interpretations against original papers
 - **Fair Use**: Respect copyright when sharing paper content
 - **Attribution**: Acknowledge original authors in your work
+
+### AI Responsibility
+
+When using this skill to analyze papers:
+- Admit when something is unclear or when you're unsure
+- Don't oversimplify to the point of inaccuracy
+- Highlight when theory differs from practice
+- Warn about implementation challenges honestly
+- Balance simplicity with correctness
 
 ## Integration with Tools
 
