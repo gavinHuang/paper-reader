@@ -13,7 +13,10 @@
       "Bash(py:*)",
       "Bash(uv run:*)",
       "Skill(paper-analysis)",
-      "Skill(paper-analysis:*)"
+      "Skill(paper-analysis:*)",
+      "Bash(dir \"C:\\\\Users\\\\Gavin\\\\.claude\\\\skills\\\\llamaparse\")",
+      "Bash(findstr:*)",
+      "Bash(dir:*)"
     ]
   }
 }
